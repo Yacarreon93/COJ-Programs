@@ -46,8 +46,8 @@ public class P1002 {
             
             temp_max = 0;
             
-            for (short y = 0; y < terrain_size - 1; y++) {
-                for (short x = 0; x < terrain_size - 1; x++) { 
+            for (short y = 0; y < terrain_size; y++) {
+                for (short x = 0; x < terrain_size; x++) { 
                                        
                     if(terrain[y][x] == '.') {
                         
