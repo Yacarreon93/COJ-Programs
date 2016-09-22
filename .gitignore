@@ -10,6 +10,7 @@
 
 # NetBeans Project Files #
 nbproject/
+build/
 build.xml
 manifest.mf
 
