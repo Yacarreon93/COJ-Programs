@@ -18,15 +18,27 @@ public class P1132 {
         for (int i = 0; i < cases; i++) {
             
             int n = sc.nextInt();
-            int summation = 0;
+            int summation = 0;     
             
-            for (int j = 1; j < n; j++) {
+            if(n > 1) {                
                 
-                if(n % j == 0) {
-                    summation += j;
+                summation = 1;
+                
+                for (int j = 2; j <= Math.sqrt(n); j++) {
+                
+                    if(n % j == 0) {
+                        
+                        summation += j; 
+                        
+                        if(j != (n / j)) {
+                            summation += (n / j);
+                        }
+                               
+                    }
+
                 }
                 
-            }
+            }                        
             
             System.out.println(summation);
             
