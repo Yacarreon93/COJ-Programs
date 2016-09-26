@@ -7,7 +7,7 @@ Description: http://coj.uci.cu/24h/problem.xhtml?pid=1077
 
 import java.util.Scanner;
 
-public class p1077 {
+public class P1077 {
     
     private static Scanner sc = new Scanner(System.in);
     
