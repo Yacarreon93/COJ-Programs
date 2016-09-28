@@ -26,10 +26,10 @@ public class P1388 {
                 System.out.println(a);
             } else {
                 
-                byte lastDigit = (byte)(a % (byte)10);            
+                byte lastDigit = (byte)(a % 10);            
                 byte[] pattern = getLastDigitsPattern(lastDigit);
 
-                byte remainder = (byte)(exp - 1 % 4);        
+                byte remainder = (byte)((exp - 1) % 4);        
                 byte index = (byte)((remainder + 3) % 4);
                 
                 System.out.println(pattern[index]);
