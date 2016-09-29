@@ -25,17 +25,17 @@ public class P1025 {
             
             if(groups.containsKey(peopleInGroup)) {
                 
-                groups.replace(peopleInGroup, groups.get(peopleInGroup), (short)(groups.get(peopleInGroup) + 1));
+                groups.put(peopleInGroup,(short)(groups.get(peopleInGroup) + 1));
+                // groups.replace(peopleInGroup, groups.get(peopleInGroup), (short)(groups.get(peopleInGroup) + 1));
                 
             } else {
                 
                 groups.put(peopleInGroup,(short)1);
                 
             }            
-        }
+        }       
         
-        short groupsToWin = (short)((groupsQty / 2) + 1);
-        
+        short groupsToWin = (short)((groupsQty / 2) + 1);        
         short supporters = 0;
             
         counter:
@@ -48,9 +48,7 @@ public class P1025 {
                     groupsToWin--;
                     supporters += (entry.getKey() / 2) + 1;
 
-                } else {
-                    break counter;
-                }
+                } else { break counter; }
                 
             }
             
