@@ -5,7 +5,7 @@ package coj.java;
 Description: http://coj.uci.cu/24h/problem.xhtml?pid=1025
 */
 
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class P1025 {
         
         byte groupsQty = sc.nextByte();
         
-        HashMap<Short, Short> groups = new HashMap<>();
+        Map<Short, Short> groups = new TreeMap<>();
         
         for (byte i = 0; i < groupsQty; i++) {
             
@@ -52,7 +52,7 @@ public class P1025 {
                 
             }
             
-        }
+        }              
         
         System.out.println(supporters);
         
