@@ -21,7 +21,13 @@ public class P2152 {
             
             int sum = 0;
             
-            for(char digit : number.toCharArray()) {                                
+            char[]digits = number.toCharArray();
+            
+            if(digits[0] == '-') {
+                digits [0] = '0';
+            } 
+            
+            for(char digit : digits) {                                
                 
                 sum += Character.digit(digit, 10);
                 
