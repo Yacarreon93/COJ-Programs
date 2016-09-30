@@ -49,8 +49,8 @@ public class P1840 {
             
             boolean insecure = true;
             
-            for (int j = 0; j < broken.length; j++) {
-                if(broken[j] == 0) {
+            for (int j = 1; j < broken.length; j++) {
+                if(broken[j] != broken[j - 1]) {
                     insecure = false;
                 }
             }
