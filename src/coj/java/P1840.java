@@ -20,7 +20,7 @@ public class P1840 {
             String password = sc.next();
             char[] chars = password.toCharArray();
             
-            int[] broken = new int[6];
+            int[] broken = {0, 0, 0, 0, 0, 0};
             
             for (char c : chars ) {
                 
