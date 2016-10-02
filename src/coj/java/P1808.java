@@ -29,7 +29,7 @@ public class P1808 {
                 
             }
             
-            System.out.println("Hamming distance is " + distance);
+            System.out.println("Hamming distance is " + distance + ".");
             
             s1 = sc.next();
             
